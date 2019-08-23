@@ -58,8 +58,6 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void handleButtonAction(ActionEvent event)throws ClassNotFoundException, SQLException {
-        String sabor = "";
-        JOptionPane.showInputDialog("");
     }
     public void handleButtonActionC(ActionEvent event) throws ClassNotFoundException, SQLException {
         Connection c ;
@@ -69,7 +67,7 @@ public class FXMLDocumentController implements Initializable {
             Class.forName(driver);
             Connection conn=(Connection) DriverManager.getConnection(ruta,user,password);
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "select * from Paletas";
+            String SQL = "select * from Paletas where sabor = 'Chocolate'";
             //ResultSet
             ResultSet rs = conn.createStatement().executeQuery(SQL);
      
