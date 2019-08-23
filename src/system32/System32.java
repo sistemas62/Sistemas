@@ -22,7 +22,7 @@ public class System32 extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
-        
+        System.out.println("HOls mundfo");
         stage.setScene(scene);
         stage.show();
     }
