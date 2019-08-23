@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author pc-29
+ * @author pc-2900000
  */
 public class System32 extends Application {
     
